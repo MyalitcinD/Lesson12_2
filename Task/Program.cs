@@ -22,8 +22,10 @@ namespace Task
             double x0 = Convert.ToDouble(Console.ReadLine());
             Console.Write("y0 = ");
             double y0 = Convert.ToDouble(Console.ReadLine());
+
             Console.WriteLine("Длина окружности = {0}", Circle.GetCircumference(R));
             Console.WriteLine("Площадь круга = {0}", Circle.GetArea(R));
+
             if(Circle.CordCheck(x, y, R, x0, y0)) {
                 Console.WriteLine("Точка принадлежит кругу");
             }
